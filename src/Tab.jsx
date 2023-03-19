@@ -7,12 +7,14 @@ function Character(props) {
 
     if (!props.bingo)
         return (<div className={"character"}
-                     style={{backgroundImage: `url(${require("./img/" + props.name + ".png")})`}}
-                     onClick={()=>props.onClick(props.name)}/>);
+                     style={{backgroundImage: `url(${require("./img/" + props.set + "/" + props.name + ".png")})`}}
+                     onClick={() => props.onClick(props.name)}/>);
 
     return (<div className={"character"}
-                 style={{backgroundImage: `url(${require("./img/" + props.name + ".png")})`}}
-                 onClick={()=>props.onClick(props.name)}><img className={"bingoChip"} src={require("./img/bingoChip.png")} alt={"bingoChip"} onClick={()=>props.onClick(props.name)}/></div>);
+                 style={{backgroundImage: `url(${require("./img/" + props.set + "/" + props.name + ".png")})`}}
+                 onClick={() => props.onClick(props.name)}><img className={"bingoChip"}
+                                                                src={require("./img/bingoChip.png")} alt={"bingoChip"}
+                                                                onClick={() => props.onClick(props.name)}/></div>);
 }
 
 export function Tab(props) {
@@ -23,7 +25,9 @@ export function Tab(props) {
 
         return (
             <div>
-                <div className={"tab"} id={props.role} onClick={props.onClick}>{props.role.charAt(0).toUpperCase()+props.role.slice(1)}<FontAwesomeIcon icon={faBars} /></div>
+                <div className={"tab"} id={props.role}
+                     onClick={props.onClick}>{props.role.charAt(0).toUpperCase() + props.role.slice(1)}<FontAwesomeIcon
+                    icon={faBars}/></div>
             </div>
         )
     }
@@ -31,10 +35,11 @@ export function Tab(props) {
     return (
         <div>
             <div className={"tab active"} id={props.role} onClick={props.onClick}>
-                {props.role.charAt(0).toUpperCase()+props.role.slice(1)}<FontAwesomeIcon icon={faBars} /></div>
+                {props.role.charAt(0).toUpperCase() + props.role.slice(1)}<FontAwesomeIcon icon={faBars}/></div>
             <div className={"characters"}>
                 {Object.keys(props.characters).map((character) =>
-                    <Character key={character} name={character} onClick={(event) => bingoHero(event)} bingo={bingos[character]}
+                    <Character key={character} set={props.set} name={character} onClick={(event) => bingoHero(event)}
+                               bingo={bingos[character]}
                     />)}
             </div>
         </div>

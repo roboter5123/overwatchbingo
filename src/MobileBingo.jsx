@@ -7,9 +7,9 @@ export function MobileBingo(props) {
 
     return (
         <div className={"view"}>
-            <h1> {props.game + " Bingo!"}</h1>
+            <h1> {props.game.charAt(0).toUpperCase()+props.game.slice(1) + " Bingo!"}</h1>
             {Object.keys(props.characters).map((characterRole)=>
-                <Tab key={characterRole} role={characterRole} characters={props.characters[characterRole]} isExpanded={expandedTabs[characterRole]} onClick={()=> expand(characterRole)}/>)}
+                <Tab key={characterRole} set={props.game} role={characterRole} characters={props.characters[characterRole]} isExpanded={expandedTabs[characterRole]} onClick={()=> expand(characterRole)}/>)}
         </div>
     );
 

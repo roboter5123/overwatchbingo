@@ -3,6 +3,11 @@ body{
     background-color: darkgray;
 }
 
+img{
+
+    max-height: 100%;
+}
+
 *{
 
     box-sizing: border-box;
@@ -64,3 +69,5 @@ h1{
     height: 90%;
     width: 90%;
 }
+
+
