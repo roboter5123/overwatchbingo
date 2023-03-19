@@ -1,0 +1,20 @@
+.heroes{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heroes > div {
+
+    height: calc(100vw / 3);
+    width: calc(100% / 3);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bingoChip{
+
+    height: 90%;
+    width: 90%;
+}
