@@ -1,3 +1,26 @@
+body{
+
+    background-color: darkgray;
+}
+
+*{
+
+    box-sizing: border-box;
+}
+
+div:has(.tab){
+
+    padding: 5px;
+}
+
+.tab{
+
+    height: 25px;
+    background-color: #282c34;
+    color: aliceblue;
+    text-align: center;
+}
+
 .heroes{
 
     display: flex;
@@ -6,11 +29,13 @@
 
 .heroes > div {
 
-    height: calc(100vw / 3);
-    width: calc(100% / 3);
+    height: calc(100vw / 3 - 15px - 10px);
+    width: calc(100% / 3 - 10px);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 5px;
+    border: black solid 2px;
 }
 
 .bingoChip{
