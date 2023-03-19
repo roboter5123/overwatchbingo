@@ -10,6 +10,7 @@ export function MobileView() {
 
     return (
         <div className={"view"}>
+            <h1> Overwatch Bingo!</h1>
             <Tab role={"Tank"}
                  heroes={heroes["tank"]}
                  isExpanded={tankExpanded}

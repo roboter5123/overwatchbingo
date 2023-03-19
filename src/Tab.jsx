@@ -10,7 +10,7 @@ function Hero(props) {
 
     return (<div className={props.name}
                  style={{backgroundImage: `url(${require("./img/" + props.name + ".png")})`}}
-                 onClick={()=>props.onClick(props.name)}><img className={"bingoChip"} src={require("./img/bingoChip.webp")} alt={"bingoChip"} onClick={()=>props.onClick(props.name)}/></div>);
+                 onClick={()=>props.onClick(props.name)}><img className={"bingoChip"} src={require("./img/bingoChip.png")} alt={"bingoChip"} onClick={()=>props.onClick(props.name)}/></div>);
 }
 
 export function Tab(props) {
