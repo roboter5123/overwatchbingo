@@ -3,38 +3,27 @@ import "./Tab.css"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 
-function Hero(props) {
+function Character(props) {
 
     if (!props.bingo)
-        return (<div className={"hero"}
+        return (<div className={"character"}
                      style={{backgroundImage: `url(${require("./img/" + props.name + ".png")})`}}
                      onClick={()=>props.onClick(props.name)}/>);
 
-    return (<div className={props.name}
+    return (<div className={"character"}
                  style={{backgroundImage: `url(${require("./img/" + props.name + ".png")})`}}
                  onClick={()=>props.onClick(props.name)}><img className={"bingoChip"} src={require("./img/bingoChip.png")} alt={"bingoChip"} onClick={()=>props.onClick(props.name)}/></div>);
 }
 
 export function Tab(props) {
 
-    function emptyBingos(heroes) {
-
-        let object = {}
-        for (const element of heroes) {
-
-            object[element] = false
-        }
-
-        return object;
-    }
-
-    const [bingos, setBingos] = useState(emptyBingos(props.heroes));
+    const [bingos, setBingos] = useState(emptyBingos(props.characters));
 
     if (!props.isExpanded) {
 
         return (
             <div>
-                <div className={"tab"} id={props.role} onClick={props.onClick}>{props.role}<FontAwesomeIcon icon={faBars} /></div>
+                <div className={"tab"} id={props.role} onClick={props.onClick}>{props.role.charAt(0).toUpperCase()+props.role.slice(1)}<FontAwesomeIcon icon={faBars} /></div>
             </div>
         )
     }
@@ -42,15 +31,26 @@ export function Tab(props) {
     return (
         <div>
             <div className={"tab active"} id={props.role} onClick={props.onClick}>
-                {props.role}<FontAwesomeIcon icon={faBars} /></div>
-            <div className={"heroes"}>
-                {props.heroes.map((hero) =>
-                    <Hero key={hero} name={hero} onClick={(event) => bingoHero(event)} bingo={bingos[hero]}
+                {props.role.charAt(0).toUpperCase()+props.role.slice(1)}<FontAwesomeIcon icon={faBars} /></div>
+            <div className={"characters"}>
+                {Object.keys(props.characters).map((character) =>
+                    <Character key={character} name={character} onClick={(event) => bingoHero(event)} bingo={bingos[character]}
                     />)}
             </div>
         </div>
 
     )
+
+    function emptyBingos(characters) {
+
+        let object = {}
+        for (const element of Object.keys(characters)) {
+
+            object[element] = false
+        }
+
+        return object;
+    }
 
     function bingoHero(hero) {
 

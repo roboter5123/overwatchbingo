@@ -1,30 +1,14 @@
 import './App.css';
-import {useState} from "react";
-import {MobileView} from "./MobileView";
-
-const mobileWidth = 500;
-
-function DesktopView() {
-    return null;
-}
+import {MobileBingo} from "./MobileBingo";
+import {heroes} from "./heroes";
 
 function App() {
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= mobileWidth);
-
-    window.addEventListener("resize", checkMobile)
-
-
     return (
         <div className="App">
-            {isMobile ? <MobileView></MobileView> : <DesktopView></DesktopView>}
+            {<MobileBingo game={"Overwatch"} characters={heroes}></MobileBingo> }
         </div>
     );
-
-    function checkMobile() {
-
-        setIsMobile(window.innerWidth <= mobileWidth)
-    }
 }
 
 export default App;

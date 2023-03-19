@@ -1,5 +1,7 @@
-export function MobileView() {
+import {MobileBingo} from "./MobileBingo";
+
+export function DesktopView() {
     return (
-        <>{"desktopView has not been implemented yet. Pelse switch to mobile or resize your window to a max width of 500 px"}</>
+        <MobileBingo/>
     );
 }

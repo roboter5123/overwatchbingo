@@ -38,7 +38,7 @@ h1{
 }
 
 
-.heroes{
+.characters{
 
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@ h1{
     box-shadow: gray 3px 3px;
 }
 
-.heroes > div {
+.characters > div {
 
     height: calc(100vw / 3 - 15px - 10px);
     width: calc(100% / 3 - 10px);
