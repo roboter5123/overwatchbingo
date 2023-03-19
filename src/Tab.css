@@ -15,12 +15,22 @@ div:has(.tab){
 
 .tab{
 
+    position: relative;
     height: 50px;
     background-color: #282c34;
     color: aliceblue;
     text-align: center;
     font-size: 2rem;
+    cursor: pointer;
 }
+
+.tab > svg{
+
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 16px)
+}
+
 
 .heroes{
 

@@ -1,5 +1,7 @@
 import {useState} from "react";
 import "./Tab.css"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
 
 function Hero(props) {
 
@@ -32,7 +34,7 @@ export function Tab(props) {
 
         return (
             <div>
-                <div className={"tab"} id={props.role} onClick={props.onClick}>{props.role}</div>
+                <div className={"tab"} id={props.role} onClick={props.onClick}>{props.role}<FontAwesomeIcon icon={faBars} /></div>
             </div>
         )
     }
@@ -40,7 +42,7 @@ export function Tab(props) {
     return (
         <div>
             <div className={"tab active"} id={props.role} onClick={props.onClick}>
-                {props.role}</div>
+                {props.role}<FontAwesomeIcon icon={faBars} /></div>
             <div className={"heroes"}>
                 {props.heroes.map((hero) =>
                     <Hero key={hero} name={hero} onClick={(event) => bingoHero(event)} bingo={bingos[hero]}
