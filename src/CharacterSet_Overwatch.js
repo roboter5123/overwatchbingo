@@ -1,4 +1,4 @@
-export const heroes = {
+export const characterSet_Overwatch = {
     "tank": {
         "diva": false,
         "doomfist": false,
