@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/overwatchbingo/static/css/main.549f0929.css",
+    "main.css": "/overwatchbingo/static/css/main.cac3bd8e.css",
     "main.js": "/overwatchbingo/static/js/main.0d255836.js",
     "static/js/787.d6a712be.chunk.js": "/overwatchbingo/static/js/787.d6a712be.chunk.js",
     "static/media/reinhardt.png": "/overwatchbingo/static/media/reinhardt.238d30db9dc70de0b517.png",
@@ -41,12 +41,12 @@
     "static/media/zenyatta.png": "/overwatchbingo/static/media/zenyatta.6f96ba948f42077ceff1.png",
     "static/media/bingoChip.webp": "/overwatchbingo/static/media/bingoChip.a18346c527cbfc0f6fe4.webp",
     "index.html": "/overwatchbingo/index.html",
-    "main.549f0929.css.map": "/overwatchbingo/static/css/main.549f0929.css.map",
+    "main.cac3bd8e.css.map": "/overwatchbingo/static/css/main.cac3bd8e.css.map",
     "main.0d255836.js.map": "/overwatchbingo/static/js/main.0d255836.js.map",
     "787.d6a712be.chunk.js.map": "/overwatchbingo/static/js/787.d6a712be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.549f0929.css",
+    "static/css/main.cac3bd8e.css",
     "static/js/main.0d255836.js"
   ]
 }
