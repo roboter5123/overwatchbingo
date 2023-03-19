@@ -13,6 +13,11 @@ div:has(.tab){
     padding: 5px;
 }
 
+h1{
+
+    text-shadow: gray 3px 3px;
+}
+
 .tab{
 
     position: relative;
@@ -20,6 +25,7 @@ div:has(.tab){
     background-color: #282c34;
     color: aliceblue;
     text-align: center;
+    box-shadow: gray 3px 3px;
     font-size: 2rem;
     cursor: pointer;
 }
@@ -36,6 +42,9 @@ div:has(.tab){
 
     display: flex;
     flex-wrap: wrap;
+    background-color: white;
+    border: black solid 2px;
+    box-shadow: gray 3px 3px;
 }
 
 .heroes > div {
@@ -47,6 +56,7 @@ div:has(.tab){
     background-position: center;
     margin: 5px;
     border: black solid 2px;
+    box-shadow: gray 3px 3px;
 }
 
 .bingoChip{
