@@ -1,17 +1,31 @@
 {
   "files": {
     "main.css": "/overwatchbingo/static/css/main.3de9a5a2.css",
-    "main.js": "/overwatchbingo/static/js/main.cd2a3910.js",
+    "main.js": "/overwatchbingo/static/js/main.b9ead124.js",
     "static/js/787.d6a712be.chunk.js": "/overwatchbingo/static/js/787.d6a712be.chunk.js",
     "static/media/fuse.png": "/overwatchbingo/static/media/fuse.c455bb8f1e7bba8241f9.png",
     "static/media/vantage.png": "/overwatchbingo/static/media/vantage.ca21f4a5275b8e2316c0.png",
+    "static/media/valkyrie.png": "/overwatchbingo/static/media/valkyrie.feb660b7a6f83e0f4957.png",
+    "static/media/horizon.png": "/overwatchbingo/static/media/horizon.0fa40f9c991747217f4b.png",
+    "static/media/octane.png": "/overwatchbingo/static/media/octane.d77da6da12bd311b1df2.png",
+    "static/media/gibraltar.png": "/overwatchbingo/static/media/gibraltar.19328b2e353e9c78b74c.png",
+    "static/media/newcastle.png": "/overwatchbingo/static/media/newcastle.ede6238190d530e512f9.png",
     "static/media/revenant.png": "/overwatchbingo/static/media/revenant.42661710ca8da1da3814.png",
+    "static/media/mirage.png": "/overwatchbingo/static/media/mirage.fc5f9c4dcea53d5f62ed.png",
+    "static/media/rampart.png": "/overwatchbingo/static/media/rampart.b91646326d738c01895b.png",
     "static/media/bloodhound.png": "/overwatchbingo/static/media/bloodhound.5448609a84017f42e7d0.png",
     "static/media/crypto.png": "/overwatchbingo/static/media/crypto.557b283aec32f575bd26.png",
+    "static/media/caustic.png": "/overwatchbingo/static/media/caustic.b12c1cc6d23da1e1f111.png",
+    "static/media/lifeline.png": "/overwatchbingo/static/media/lifeline.5f8b76923398674f6ab0.png",
+    "static/media/loba.png": "/overwatchbingo/static/media/loba.3237987180db5b8f6023.png",
     "static/media/seer.png": "/overwatchbingo/static/media/seer.d5694183148d52681da1.png",
     "static/media/madmaggie.png": "/overwatchbingo/static/media/madmaggie.fd476f6d6b35318c4c40.png",
+    "static/media/catalyst.png": "/overwatchbingo/static/media/catalyst.e54976f6c037eef1f3a9.png",
     "static/media/bangalore.png": "/overwatchbingo/static/media/bangalore.49822dee877d7c4b562a.png",
     "static/media/ash.png": "/overwatchbingo/static/media/ash.b74389c8da02c9d05bc8.png",
+    "static/media/wattson.png": "/overwatchbingo/static/media/wattson.0bb07b3ee7de6b21d6ef.png",
+    "static/media/pathfinder.png": "/overwatchbingo/static/media/pathfinder.a64420ef44b249e457e0.png",
+    "static/media/wraith.png": "/overwatchbingo/static/media/wraith.249907c5ca43d070e49e.png",
     "static/media/reinhardt.png": "/overwatchbingo/static/media/reinhardt.238d30db9dc70de0b517.png",
     "static/media/junkrat.png": "/overwatchbingo/static/media/junkrat.e146b0f89e44b0c759c7.png",
     "static/media/ana.png": "/overwatchbingo/static/media/ana.3ec32cb3c92308b6a292.png",
@@ -52,11 +66,11 @@
     "static/media/overwatch.png": "/overwatchbingo/static/media/overwatch.7dcd2dce543b6b57b4a7.png",
     "index.html": "/overwatchbingo/index.html",
     "main.3de9a5a2.css.map": "/overwatchbingo/static/css/main.3de9a5a2.css.map",
-    "main.cd2a3910.js.map": "/overwatchbingo/static/js/main.cd2a3910.js.map",
+    "main.b9ead124.js.map": "/overwatchbingo/static/js/main.b9ead124.js.map",
     "787.d6a712be.chunk.js.map": "/overwatchbingo/static/js/787.d6a712be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3de9a5a2.css",
-    "static/js/main.cd2a3910.js"
+    "static/js/main.b9ead124.js"
   ]
 }
